@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+html{
+    padding: 0;
+    margin: 0;
+    background-image: url('https://cssauthor.com/wp-content/uploads/2012/12/Black-and-White-Wallpaper-19567.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Notable', sans-serif;
+    
+}
+
+
+.keys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.key{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 0.3rem;
+ border-style: solid;
+ border-radius: 0.5rem;
+ height: 5rem;
+ width: 7rem;
+ background: rgba(255, 51, 153, 0.41);
+ transition: 0.07s;
+}
+
+.soundName{
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding-bottom: 0.5rem;
+}
+
+kbd{
+    font-size: 3rem;
+    font-family: 'Notable', sans-serif;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: white;
+    color: white;
+    box-shadow: 0 0 1rem rgb(255, 51, 153);
+}
+
+.soundName{
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    
+}
+
+@media(max-width: 630){
+    .key{
+        color: aliceblue;
+        font-size: 10px;
+
+    }
+}
